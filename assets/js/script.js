@@ -42,9 +42,6 @@ window.addEventListener('load', () => {
   /* console.log(posts[0].getBoundingClientRect().top + window.scrollY) */ ;/*scrollY devuelve el numero de 
   px en que la ventana ha sido scrolled verticalmente*/
 
- /*  posts.forEach((post) => {
-    postTops.push(Math.floor(post.getBoundingClientRect().top + window.scrollY))
-  }) */
   /* console.log(postTops) */
 
   resetPagePosition()

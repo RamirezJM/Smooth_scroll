@@ -7,7 +7,6 @@
 }
 
 body {
-	
 	color: #333;
 	padding-top: 200px;
 }
@@ -17,7 +16,7 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	height: 160px;
+	padding-block: 1.5em;
 }
 
 header h1 {
@@ -34,34 +33,31 @@ img {
 }
 
 section {
-	width: 95%;
-	margin: 0 auto 150px auto;
-	padding: 25px;
+	width: 90%;
+	margin: 4em auto;
+	padding: 1.5em;
 	box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 }
 
 /*************** Navigation Styles ***************/
 header nav {
-	width: 95%;
+	width: 90%;
 	margin: auto;
 }
 
 header nav ul {
 	display: flex;
+  flex-wrap: wrap;
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  gap: .5em;
 }
 
 header nav ul li {
-	width: 20%;
-	box-sizing: border-box;
-	border-left: 2px solid #666;
+  flex: 1;
+	border: 2px solid #666;
+  justify-content: center;
 }
 
-header nav ul li:first-of-type{
-	border-left: none;
-}
 
 header nav ul li a {
 	text-decoration: none;
@@ -69,7 +65,7 @@ header nav ul li a {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 10px;
+	padding: .8em;
 	background: #9C9C9C;
 	white-space: nowrap;
 	overflow: hidden;
@@ -83,6 +79,12 @@ header nav ul li a {
 	transition: all 1s;
 }
 
+footer{
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 -5px 8px 1px rgba(0,0,0,0.75);
+}
+
 
 @media only screen and (min-width: 700px) {
 	
@@ -93,7 +95,7 @@ header nav ul li a {
 	}
 
 	#first article img {
-		margin-left: 25px;
+		margin-left: 1.5em;
 	}
 	
 	/*************** Second Section Styles ***************/
@@ -113,7 +115,7 @@ header nav ul li a {
 	}
 
 	#third article img {
-		margin-right: 25px;
+		margin-right: 1.5em;
 	}
 
 	/*************** Fifth Section Styles ***************/
@@ -122,7 +124,7 @@ header nav ul li a {
 	}
 
 	#fifth {
-		margin-bottom: 500px;
+		margin-bottom: 5em;
 	}
 }
 
